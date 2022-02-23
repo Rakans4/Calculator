@@ -19,17 +19,18 @@
     -webkit-appearance: none;
     appearance: none;
     border-radius: 100%;
+    border: 0;
     width: 0.8rem;
     height: 0.8rem;
-    background: #04AA6D;
+    background: #eee;
     cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
-    
+    border: 0;
     border-radius: 100%;
     width: 0.8rem;
     height: 0.8rem;
-    background: #04AA6D;
+    background: #eee;
     cursor: pointer;
 }

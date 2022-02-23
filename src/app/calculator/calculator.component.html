@@ -1,4 +1,4 @@
-<div class="w-[40rem] h-[46em] border-2 border-red-400 p-8">
+<div class="w-[40rem] h-[46em] bg-slate-100 rounded-lg p-8">
     <div class="flex justify-between w-full">
         <span class="text-3xl">calc</span>
         <div class="w-[4rem]">
@@ -14,7 +14,7 @@
     </div>
     <app-field></app-field>
     <div class="grid grid-cols-4 gap-y-6 gap-x-4 h-[60%] mt-9">
-        <div *ngFor="let button of buttons" class="h-full bg-slate-100 flex items-center justify-center">
+        <div *ngFor="let button of buttons" class="h-full bg-slate-200 rounded-lg flex items-center justify-center">
             <app-button [button]="button"></app-button>
         </div>
     </div>
