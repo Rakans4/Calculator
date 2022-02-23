@@ -1,3 +1,3 @@
-<div class="h-screen w-screen flex justify-center items-center">
-  <app-calculator></app-calculator>
+<div class="h-screen w-screen flex justify-center items-center bg-mainBg" [ngClass]="this.theme">
+  <app-calculator (onThemeChange)="selectTheme($event)"></app-calculator>
 </div>

@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Calculator';
+  theme = 'theme-one';
+
+  constructor(){
+  }
+
+  ngOnInit() {
+  }
+
+  selectTheme(_event: any): void {
+    this.theme = _event
+  }
 }

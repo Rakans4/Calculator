@@ -34,3 +34,11 @@
     background: #eee;
     cursor: pointer;
 }
+
+.button:nth-of-type(17) {
+    grid-column: 1/3; 
+}
+
+.button:nth-of-type(18) {
+    grid-column: 3/5; 
+}
