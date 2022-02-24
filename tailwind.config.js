@@ -15,8 +15,8 @@ module.exports = {
         keyBgPrimary:'var(--key-background-primary)',
         keyShadowPrimary:'var(--key-shadow-primary)',
         darkText:'var(--dark-text)',
-        veryDarkText:'var(--very-dark-text)',
-        whiteText:'var(--white)'
+        whiteText:'var(--white)',
+        accentText:'var(--accent-text)',
       },
       fontFamily: {
         'sans': ['Spartan', 'sans-serif'],

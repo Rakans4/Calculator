@@ -1,5 +1,5 @@
-<div class="w-[40rem] h-[46em] bg-slate-100 rounded-lg p-8">
-    <div class="flex justify-between w-full">
+<div class="w-[36rem] h-[46em] bg-mainBg rounded-lg p-8">
+    <div class="flex justify-between w-full" [ngClass]="{'text-white': selectedTheme == 1}">
         <span class="text-3xl">calc</span>
         <div class="w-[4rem]">
             <div class="flex w-full justify-between px-2 text-xs">
@@ -8,14 +8,16 @@
                 <span>3</span>
             </div>
             <div class="mt-1">
-                <input (click)="selectTheme($event)" type="range" name="theme" min="1" max="3" [value]="this.selectedTheme" id="theme" class="slider rounded-2xl bg-slate-500 h-6 px-1 w-full">
+                <input (click)="selectTheme($event)" type="range" name="theme" min="1" max="3" [value]="this.selectedTheme" id="theme" class="slider rounded-2xl bg-toggleBg h-6 px-1 w-full">
             </div>
         </div>
     </div>
-    <app-field></app-field>
-    <div class="grid grid-cols-4 gap-y-6 gap-x-4 h-[60%] mt-9">
-        <div *ngFor="let button of buttons" class="h-full bg-slate-200 rounded-lg flex items-center justify-center button">
-            <app-button [button]="button"></app-button>
+    <app-field [ngClass]="{'text-white': selectedTheme == 1}"></app-field>
+    <div class="grid grid-cols-4 gap-y-5 gap-x-6 h-[60%] mt-9 bg-toggleBg p-10 rounded-lg">
+        <div *ngFor="let button of mybuttons" class="h-full rounded-lg flex items-center justify-center bg-keyBgPrimary button text-2xl" 
+        [ngClass]="{'button-secondary text-white text-base': button.operation == 'delete' || button.operation == 'reset',
+                    'button-accent text-accentText text-base': button.operation == 'equals'}">
+            <app-button [button]="button.text"></app-button>
         </div>
     </div>
 </div>

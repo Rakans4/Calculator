@@ -24,6 +24,7 @@
     --key-shadow-primary: hsl(28, 16%, 65%);
     --dark-text: hsl(221, 14%, 31%);
     --white: hsl(0, 0, 100%);
+    --accent-text: hsl(0, 0, 100%);
 }
 
 .theme-two {
@@ -38,6 +39,7 @@
     --key-shadow-primary: hsl(35, 11%, 61%);
     --dark-text: hsl(60, 10%, 19%);
     --white: hsl(0, 0, 100%);
+    --accent-text: hsl(0, 0, 100%);
 }
 
 .theme-three {
@@ -48,9 +50,10 @@
     --key-shadow-secondary: hsl(285, 91%, 52%);
     --key-background-accent: hsl(176, 100%, 44%);
     --key-shadow-accent: hsl(177, 92%, 70%);
-    --key-background-main: hsl(268, 47%, 21%);
-    --key-shadow-main: hsl(290, 70%, 36%);
+    --key-background-primary: hsl(268, 47%, 21%);
+    --key-shadow-primary: hsl(290, 70%, 36%);
     --dark-text: hsl(52, 100%, 62%);
     --very-dark-text: hsl(198, 20%, 13%);
     --white: hsl(0, 0, 100%);
+    --accent-text: hsl(198, 20%, 13%);
 }
