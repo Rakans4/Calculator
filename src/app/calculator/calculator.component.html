@@ -12,9 +12,9 @@
             </div>
         </div>
     </div>
-    <app-field [ngClass]="{'text-white': selectedTheme == 1}"></app-field>
+    <app-field [total]="errorDisplay == ''? total : errorDisplay" [ngClass]="{'text-white': selectedTheme == 1}"></app-field>
     <div class="grid grid-cols-4 gap-y-5 gap-x-6 h-[60%] mt-9 bg-toggleBg p-10 rounded-lg">
-        <div *ngFor="let button of mybuttons" class="h-full rounded-lg flex items-center justify-center bg-keyBgPrimary button text-2xl" 
+        <div *ngFor="let button of mybuttons" (click)="clickKeypad(button)" class="h-full rounded-lg flex items-center justify-center bg-keyBgPrimary button text-2xl" 
         [ngClass]="{'button-secondary text-white text-base': button.operation == 'delete' || button.operation == 'reset',
                     'button-accent text-accentText text-base': button.operation == 'equals'}">
             <app-button [button]="button.text"></app-button>
