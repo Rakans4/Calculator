@@ -1,3 +1,7 @@
-<div class="h-screen w-screen flex justify-center items-center bg-mainBg text-darkText" [ngClass]="this.theme">
+<div class="h-screen w-screen flex justify-center items-center bg-mainBg text-darkText flex-col" [ngClass]="this.theme">
   <app-calculator (onThemeChange)="selectTheme($event)"></app-calculator>
+  <div class="attribution" [ngClass]="{'text-white': this.theme == 'theme-one'}">
+    Challenge by <a class="underline" href="https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29" target="_blank">Frontend Mentor</a>. 
+    Coded by <a class="underline" href="https://github.com/Rakans4" target="_blank">Rakan</a>.
+  </div>
 </div>
