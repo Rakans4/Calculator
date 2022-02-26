@@ -31,7 +31,7 @@ export class CalculatorComponent implements OnInit {
     { text: '0', operation: 'number', value: 0 },
     { text: '/', operation: 'divide', value: 11 },
     { text: 'x', operation: 'multiply', value: 11 },
-    { text: 'Reset', operation: 'reset', value: 13 },
+    { text: 'RESET', operation: 'reset', value: 13 },
     { text: '=', operation: 'equals', value: 14 },
   ];
 

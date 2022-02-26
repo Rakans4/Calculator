@@ -31,16 +31,23 @@
 .button {
     background-color: var(--key-background-primary);
     box-shadow: 0 0.3rem var(--key-shadow-primary);
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 .button-accent {
     background-color: var(--key-background-accent);
     box-shadow: 0 0.3rem var(--key-shadow-accent);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--accent-text);
 } 
 
 .button-secondary {
     background-color: var(--key-background-secondary);
     box-shadow: 0 0.3rem var(--key-shadow-secondary);
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 .button:nth-of-type(17) {

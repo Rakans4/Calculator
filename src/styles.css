@@ -24,7 +24,7 @@
     --key-shadow-primary: hsl(28, 16%, 65%);
     --dark-text: hsl(221, 14%, 31%);
     --white: hsl(0, 0, 100%);
-    --accent-text: hsl(0, 0, 100%);
+    --accent-text: #fff;
 }
 
 .theme-two {
@@ -39,7 +39,7 @@
     --key-shadow-primary: hsl(35, 11%, 61%);
     --dark-text: hsl(60, 10%, 19%);
     --white: hsl(0, 0, 100%);
-    --accent-text: hsl(0, 0, 100%);
+    --accent-text: #fff;
 }
 
 .theme-three {

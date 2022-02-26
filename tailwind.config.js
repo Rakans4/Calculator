@@ -4,6 +4,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'mobile': {'max': '600px'}
+      },
       colors: {
         mainBg:'var(--main-background)',
         toggleBg: 'var(--toggle-background-keypad-background)',
